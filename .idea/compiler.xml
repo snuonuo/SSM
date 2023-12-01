@@ -7,6 +7,8 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="spring_01_quickstart" />
+        <module name="spring_03_beanInstance" />
+        <module name="spring_04_beanLifecycle" />
         <module name="spring_02_baseConfig" />
       </profile>
     </annotationProcessing>
