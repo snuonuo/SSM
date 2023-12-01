@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="bookDao" class="com.example.dao.impl.BookDaoImpl"/>
+    <bean id="userDao" class="com.example.dao.impl.UserDaoImpl"/>
+
+
+<!--    必须要写setter方法！！才能自动装配-->
+<!--    不能对简单类型进行依赖注入 只能装配引用类型-->
+<!--    自动装配优先级低于自己写的装配-->
+
+    <!--类型装配：每一个类型必须是唯一的  用的多！！-->
+    <bean id="bookService" class="com.example.service.impl.BookServiceImpl" autowire="byType"/>
+    <!--按名称装配  几乎不用，耦合度高！！-->
+    <bean id="bookService" class="com.example.service.impl.BookServiceImpl" autowire="byName"/>
+
+
+</beans>
