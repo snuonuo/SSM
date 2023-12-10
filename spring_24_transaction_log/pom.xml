@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.example</groupId>
-    <artifactId>spring_23_AOPcase_transferMoney</artifactId>
+    <artifactId>spring_24_transaction_log</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <properties>
